@@ -1,8 +1,9 @@
-import './App.css'
+import './App.css';
+import TwiiterAvatar from './TwitterAvatar/TwitterAvatar';
 
 function App() {
 
-  return ('Hola Mundo')
+  return (<TwiiterAvatar/>)
 }
 
 export default App
