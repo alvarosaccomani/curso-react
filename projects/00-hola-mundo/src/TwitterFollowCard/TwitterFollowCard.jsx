@@ -1,38 +1,40 @@
 import './TwitterFollowCard.css'
 
-function TwiiterAvatar() {
+function TwiiterAvatar({ formatUserName, userName, name, isFollowing }) {
 
-  return (
-    <article 
-        className="tw-followCard"
-        >
-        <header 
-                className="tw-followCard-header"
-                >
-                <img
-                    className="tw-followCard-avatar" 
-                    src="https://unavatar.io/midudev" alt="" 
-                    />
-                <div 
-                    className="tw-followCard-info"
+    const imageSrc = `https://unavatar.io/${userName}`
+
+    return (
+        <article 
+            className="tw-followCard"
+            >
+            <header 
+                    className="tw-followCard-header"
                     >
-                    <strong
-                        className="tw-followCard-infoUserName"
+                    <img
+                        className="tw-followCard-avatar" 
+                        src={imageSrc} alt="" 
+                        />
+                    <div 
+                        className="tw-followCard-info"
                         >
-                        Miguen Angel Duran
-                    </strong>
-                    <span>
-                        @midudev
-                    </span>
-                </div>
-        </header>
-        <aside>
-                <button className="tw-followCard-info-button">
-                    Seguir
-                </button>
-        </aside>
-    </article>
-  )
+                        <strong
+                            className="tw-followCard-infoUserName"
+                            >
+                            {name}
+                        </strong>
+                        <span>
+                            {formatUserName(userName)}
+                        </span>
+                    </div>
+            </header>
+            <aside>
+                    <button className="tw-followCard-info-button">
+                        Seguir
+                    </button>
+            </aside>
+        </article>
+    )
 }
 
 export default TwiiterAvatar
