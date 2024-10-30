@@ -1,4 +1,4 @@
-import './TwitterAvatar.css'
+import './TwitterFollowCard.css'
 
 function TwiiterAvatar() {
 

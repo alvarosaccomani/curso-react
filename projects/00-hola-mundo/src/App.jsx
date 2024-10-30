@@ -1,5 +1,5 @@
 import './App.css';
-import TwiiterAvatar from './TwitterAvatar/TwitterAvatar';
+import TwiiterAvatar from './TwitterFollowCard/TwitterFollowCard';
 
 function App() {
 
